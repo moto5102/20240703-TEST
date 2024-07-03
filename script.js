@@ -4,11 +4,11 @@ function initializeGame() {
     const gameBoard = document.getElementById('game-board');
     gameBoard.innerHTML = ''; // ゲームボードを初期化
     const cardImages = [
-        '/src/card_joker.png', // 鬼カード
-        '/src/card_normal.png', '/src/card_normal.png',
-        '/src/card_normal.png', '/src/card_normal.png',
-        '/src/card_normal.png', '/src/card_normal.png',
-        '/src/card_normal.png', '/src/card_normal.png'
+        './src/card_joker.png', // 鬼カード
+        './src/card_normal.png', './src/card_normal.png',
+        './src/card_normal.png', './src/card_normal.png',
+        './src/card_normal.png', './src/card_normal.png',
+        './src/card_normal.png', './src/card_normal.png'
     ];
     cardImages.sort(() => Math.random() - 0.5); // カードをシャッフル
 
@@ -26,7 +26,7 @@ function flipCard() {
     this.style.backgroundImage = `url('${cardType}')`;
     this.classList.add('flipped');
     setTimeout(() => {
-    if (cardType === '/src/card_joker.png') {
+    if (cardType === './src/card_joker.png') {
         playSound('oniCardSound');
         showModal('あなたの負けです！');
         disableAllCards();
