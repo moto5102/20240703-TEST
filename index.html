@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>鬼探しゲーム</h1>
-    <div id="game-board" class="game-board"></div>
+    <div id="game-board"></div>
     <div id="main-button">
         <button class="button" onclick="toggleMusic()">BGM ON/OFF</button>
         <button class="button" onclick="initializeGame()">新しいゲーム</button>
@@ -18,9 +18,10 @@
         <audio id="oniCardSound" src="./src/kaidenpa.mp3" preload="auto"></audio>
         <audio id="VictorySound" src="./src/item_4.mp3" preload="auto"></audio>
     </div>
-    <div id="modal" class="modal">
+    <div id="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
+            <!--&times;: HTMLエンティティであり、文字「×」を表します。この文字は、閉じるボタンやキャンセルボタンとして視覚的に認識されやすいため、多くのウェブインターフェースで使用されます。-->
             <p id="resultMessage"></p>
         </div>
     </div>

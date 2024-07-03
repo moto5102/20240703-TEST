@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", initializeGame);
+document.addEventListener("DOMContentLoaded", initializeGame); // ページ読み込み時にゲームを初期化
 
 function initializeGame() {
     const gameBoard = document.getElementById('game-board');
@@ -22,7 +22,7 @@ function initializeGame() {
 }
 
 function flipCard() {
-    const cardType = this.dataset.image;
+    const cardType = this.dataset.image; //thisはクリックされたそのカード要素自体を参照する
     this.style.backgroundImage = `url('${cardType}')`;
     this.classList.add('flipped');
     setTimeout(() => {
@@ -76,15 +76,16 @@ function showModal(result) {
     modal.style.display = "block";
 
     const close = document.querySelector(".close");
-    close.onclick = function() {
+    close.onclick = () => {
         modal.style.display = "none";
         initializeGame();
     };
-
     // ウィンドウ外をクリックしたときにモーダルを閉じる
-    window.onclick = function(event) {
+    window.onclick = event => {
         if (event.target == modal) {
             modal.style.display = "none";
+            initializeGame();
         }
     };
 }
+

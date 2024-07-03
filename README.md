@@ -1,5 +1,9 @@
-イラスト
-https://www.irasutoya.com/
+## 概要
+息子の為に作った、鬼探しゲーム
+9枚カードの中で鬼カードが隠れており、8枚目まで鬼が選んでなかったら勝利するゲーム。
 
-音源
-https://iwashiro-sounds.work/
+## その他
+このゲームでは以下の著作権フリー素材を使用しています。
+
+画像　https://www.irasutoya.com/
+音源　https://iwashiro-sounds.work/

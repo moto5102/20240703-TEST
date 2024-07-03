@@ -7,7 +7,7 @@ body {
     padding: 0; /* 余分なパディングを取り除く */
 }
 
-.game-board {
+#game-board {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3列の設定はそのまま */
     gap: 15px; /* カード間の隙間をなくす */
@@ -54,7 +54,7 @@ body {
     background-color: #f7d8bc;
 }
 
-.modal {
+#modal {
     display: none; /* デフォルトでは非表示 */
     position: fixed; /* 画面中央に表示 */
     z-index: 1; /* 他の要素より前面に */
@@ -92,3 +92,4 @@ body {
     text-decoration: none;
     cursor: pointer;
 }
+
