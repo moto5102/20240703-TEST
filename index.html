@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>鬼探しゲーム</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>鬼探しゲーム</h1>
+    <div id="game-board" class="game-board"></div>
+    <div id="main-button">
+        <button class="button" onclick="toggleMusic()">BGM ON/OFF</button>
+        <button class="button" onclick="initializeGame()">新しいゲーム</button>
+        <audio id="bgm" loop>
+            <source src="./src/iwashiro_saezuri.mp3" type="audio/mp3">
+        </audio>
+        <audio id="safeCardSound" src="./src/item_1.mp3" preload="auto"></audio>
+        <audio id="oniCardSound" src="./src/kaidenpa.mp3" preload="auto"></audio>
+        <audio id="VictorySound" src="./src/item_4.mp3" preload="auto"></audio>
+    </div>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="resultMessage"></p>
+        </div>
+    </div>
+        <script src="script.js"></script>
+</body>
+</html>
+
